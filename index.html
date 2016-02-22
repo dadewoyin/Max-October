@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Max October</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="animate.min.css">
+<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+<script src="wow.min.js"> </script>
+              <script>
+              new WOW().init();
+              </script>
+</head>
+<body>
+  <div id="header">
+     <div id="socialmedia">
+        <div class="socialpic"> 
+           <a href="https://soundcloud.com/maxoctober"><img src="Assets/social_/soundcloud.png" alt="soundcloud" class="logopad" width="100%"> </a>
+        </div> 
+        <div class="socialpic"> 
+           <a href="https://www.instagram.com/maxoctober/" target="_blank"> <img src="Assets/social_/instagram.png" alt="instagram"  width="100%">  </a>
+        </div> 
+        <div class="socialpic"> 
+            <a href="https://twitter.com/MaxOctober" target="_blank"> <img src="Assets/social_/twitter.png" alt="twitter" class="logobottom" width="82%"> </a>
+        </div> 
+        <div class="socialpic"> 
+            <a href="mailto:maxwell@goodposture.us"><img src="Assets/social_/mail.png" alt="email" width="90%"> </a>
+        </div> 
+     </div>
+  </div>
+
+<!--Main Logo/Hover logo-->
+
+<div id="logo-container">
+<a href="javascript: void(0)">
+   <div id="front-logo">
+      <img width="100%" src="Assets/MO logo.png" alt="Max October Logo" onmouseover="this.src='Assets/MO2 logo.png';" onmouseout="this.src='Assets/MO logo.png';">
+   </div> 
+    <div id="player">
+         <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/178387010&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    </div>
+</a>
+</div> 
+
+<div id="whitespace"> </div>
+
+<div id="form-wrapper" class="wow animated fadeInUp">
+   <form id="form" action="mail.php" method="post">
+	   <input id="input" type="email" placeholder="Your Email Address" name="email" size="25">
+     <input type="image" id="submit" border="0" alt="submit" src="Assets/arrow.png" name="Submit" width="24px" height="24px">
+   </form>
+</div>
+
+<script>
+
+document.getElementById("logo-container").onclick=function () {
+		
+	var flip = this;
+	
+	document.getElementById("player").style.display="inline-block";
+	
+	document.getElementById("logo-container").style.width="400px";
+	
+	document.getElementById("logo-container").style.paddingTop="30px";
+	
+	flip.className = flip.className + "animated flipInY";
+	
+	document.getElementById("front-logo").style.display="none";
+		
+};
+
+</script>
+
+<footer>
+<p id="copyright"> 2016 © Max October </p>
+</footer>
+</body>
+</html>
